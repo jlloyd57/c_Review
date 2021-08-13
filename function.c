@@ -16,8 +16,23 @@ double Sum(double *x, size_t n);
 void printMessage(){ //void - returns nothing 
     printf("hi\n");
 }
+
+void multiply(int x, int y){
+    int result = x * y;
+    printf("result is %d\n", result);
+}
+int addReturn(int a, int b){
+    int sum = a + b;
+    return sum;
+}
 int main(){
     printMessage(); // call the function in the main 
+    int sum = 0;
+    sum = addReturn(5,6); //pass in arguments for x and y 
+    printf("sum is %d\n", sum);
+    multiply(7,3);
 }
 
 //definitions/implementations for Average(), Sum(), etc. ..
+
+//function declaration is the function header, function def is the actual code/implementation 
